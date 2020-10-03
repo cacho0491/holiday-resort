@@ -1,0 +1,58 @@
+.Welcome {
+  background-color: beige;
+  grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-rows: 100vh;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(../../assets/welcome.jpg);
+  background-size: cover;
+  filter: brightness(2);
+}
+.WelcomeMain {
+  width: 750px;
+  height: 300px;
+  top: 40%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.431), rgba(0, 0, 0, 0.445));
+  position: relative;
+}
+.WelcomeMain,
+.WelcomeMain h1::after,
+.WelcomeMain p,
+.Button {
+  position: absolute;
+  font-family: inherit;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.WelcomeMain h1 {
+  font-weight: 700;
+  position: relative;
+  letter-spacing: 15px;
+  text-align: center;
+
+  color: #fff;
+  font-size: 350%;
+  top: 5%;
+}
+
+.WelcomeMain h1::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 200px;
+  background-color: rgb(92, 83, 30);
+  top: 120%;
+  margin-top: 20px;
+}
+
+.WelcomeMain p {
+  top: 55%;
+  font-size: 150%;
+  color: rgb(185, 185, 185);
+}
+
+.Button {
+  top: 80%;
+}

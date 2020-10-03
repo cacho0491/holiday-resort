@@ -1,0 +1,27 @@
+.Header {
+  background-color: rgb(251, 251, 251);
+
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 20;
+  color: #000;
+}
+
+.Link {
+  margin-left: 20px;
+  text-decoration: none;
+  color: currentColor;
+  transition: all 0.3s;
+}
+.Link:hover {
+  color: rgb(46, 46, 46);
+  text-shadow: 0 10px 20px #000;
+}
+.Link:active {
+  transform: translate(2px);
+}

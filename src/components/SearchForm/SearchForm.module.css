@@ -1,0 +1,63 @@
+.SearchForm {
+  grid-row: 2 / span 1;
+  grid-column: 1 / -1;
+
+  /* new grid */
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 50px 1fr;
+}
+.SearchForm h3 {
+  grid-row: 1 / span 1;
+  grid-column: 1 / -1;
+  font-size: 200%;
+  margin-bottom: 30px;
+}
+
+.Form {
+  grid-row: 2 / span 1;
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-evenly;
+  /* display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 20px; */
+}
+.Form select {
+  height: 30px;
+}
+
+.Slidecontainer {
+  width: 100%;
+}
+
+.Slide {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.Slide:hover {
+  opacity: 1;
+}
+
+.Slide::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+.Slide::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4caf50;
+  cursor: pointer;
+}

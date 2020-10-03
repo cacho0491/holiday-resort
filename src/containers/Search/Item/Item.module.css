@@ -1,0 +1,39 @@
+.Item {
+  /* background-image: url(../../../assets/about-photo-1.jpg); */
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  position: relative;
+
+  transition: all 0.2s;
+}
+.Item span {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  color: #fff;
+}
+.Item:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.315)),
+    url(../../../assets/about-photo-1.jpg);
+}
+.Item button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+
+  background-color: rgb(231, 218, 144);
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: all 0.2s;
+}
+
+.Item:hover button {
+  opacity: 1;
+}

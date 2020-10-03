@@ -1,0 +1,81 @@
+.Gallery {
+  grid-row: 4 / span 1;
+  grid-column: 1 / -1;
+
+  /* New Grid */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+.Photo1 {
+  background-image: url(../../assets/gal-1.jpeg);
+  grid-column: 1 / span 1;
+}
+.Photo2 {
+  background-image: url(../../assets/gal-2.jpeg);
+  grid-column: 1 / span 2;
+  grid-row: 4 / span 2;
+}
+.Photo3 {
+  background-image: url(../../assets/gal-3.jpeg);
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+.Photo4 {
+  background-image: url(../../assets/gal-4.jpeg);
+}
+.Photo5 {
+  background-image: url(../../assets/gal-5.jpeg);
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 1;
+}
+.Photo6 {
+  background-image: url(../../assets/gal-6.jpeg);
+}
+.Photo7 {
+  background-image: url(../../assets/gal-7.jpeg);
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
+}
+.Photo8 {
+  background-image: url(../../assets/gal-8.jpeg);
+  grid-column: 4 / span 2;
+  grid-row: 1 / span 2;
+}
+.Photo9 {
+  background-image: url(../../assets/gal-9.jpeg);
+}
+.Photo10 {
+  background-image: url(../../assets/gal-10.jpeg);
+}
+.Photo11 {
+  background-image: url(../../assets/gal-11.jpeg);
+}
+.Photo12 {
+  background-image: url(../../assets/gal-12.jpeg);
+}
+.Photo13 {
+  background-image: url(../../assets/gal-13.jpeg);
+  grid-column: 5 / span 1;
+  grid-row: 4 / span 2;
+}
+.Photo14 {
+  background-image: url(../../assets/gal-14.jpeg);
+}
+
+.Photo1,
+.Photo2,
+.Photo3,
+.Photo4,
+.Photo5,
+.Photo6,
+.Photo7,
+.Photo8,
+.Photo9,
+.Photo10,
+.Photo11,
+.Photo12,
+.Photo13,
+.Photo14 {
+  background-size: cover;
+}

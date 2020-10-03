@@ -1,0 +1,32 @@
+.Search {
+  display: grid;
+  grid-template-rows: 80vh 30vh minmax(40vh, max-content);
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.MainPicture {
+  grid-row: 1 / span 1;
+  grid-column: 1 / -1;
+  background-image: url(../../assets/main-hotel-room.jpg);
+  background-size: cover;
+
+  position: relative;
+}
+.MainText {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 130%;
+}
+
+/* Items */
+.Items {
+  grid-row: 3 / span 1;
+  grid-column: 1 / -1;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
